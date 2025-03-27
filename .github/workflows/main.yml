@@ -24,6 +24,8 @@ jobs:
         with:
           role-to-assume: arn:aws:iam::892013433554:role/durga1
           aws-region: ${{ env.AWS_REGION }}
+          audience: https://github.com/aws-actions/configure-aws-credentials
+
       
       # Upload a file to AWS s3
       - name: Copy index.html to s3
